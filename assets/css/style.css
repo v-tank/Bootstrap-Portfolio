@@ -45,6 +45,12 @@ nav .navbar-brand{
 	font-weight: 700;
 }
 
+.navbar-light .navbar-brand:hover {
+	color:#fff;
+	background: #aa4a4f;
+	font-weight: 700;
+}
+
 nav ul li a{
 	border-right: 1px solid #eee;
 }
@@ -125,6 +131,10 @@ footer{
 	text-decoration: none;
 }
 
+.portfolioItem img {
+	width: 100%;
+}
+
 .navbar-light .navbar-brand,
 h1, h2, h3, h4, h5,
 .caption p {
@@ -133,23 +143,47 @@ h1, h2, h3, h4, h5,
 
 
 @media (max-width: 980px) { 
-	/*.leftSection {
+	.leftSection {
 		max-width: 420px;
+	} 
+	
+	.customContainerSize {
+		max-width: 728px;
 	}
 
-	.leftSection img {
+	.leftSection #profpic {
 		width: 100%;
 	}
 
-	nav .container div {
-		max-width: 500px;
-	}*/
 }
 
 @media (max-width: 768px) {
+	.leftSection {
+		max-width: 728px;
+	} 
 	
+	.customContainerSize {
+		max-width: 728px;
+	}
+
+	.leftSection #profpic {
+		max-width: 333px;
+	}
+
+	.aside {
+		max-width: 728px;
+		margin-bottom: 50px;
+	}
 }
 
 @media (max-width: 640px) {
-	
+	.leftSection #profpic {
+		max-width: 556px;
+	}
+
+	nav .navbar-brand{
+	width: 100%;
+	margin: 0;
+	text-align: center;
+}
 }
